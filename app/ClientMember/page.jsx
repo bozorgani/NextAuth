@@ -1,7 +1,5 @@
 "use client";
-
-import { getServerSession } from "next-auth"
-import { options } from "../api/auth/[...nextauth]/options"
+  
 import { useSession } from "next-auth/react";
 import { redirect } from "next/navigation";
 
@@ -16,7 +14,7 @@ const Member = async () => {
 
   return (
     <div>
-        <h1>member client session</h1>
+        <h1>member Client Session</h1>
         <p>{session?.user?.email}</p>
         <p>{session?.user?.role}</p>
     </div>
